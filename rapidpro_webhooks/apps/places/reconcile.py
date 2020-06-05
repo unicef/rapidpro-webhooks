@@ -1,6 +1,6 @@
 import datetime
 
-from flask import abort, g, request
+from flask import abort, request
 
 import requests
 from simplejson import JSONDecodeError
@@ -162,7 +162,6 @@ def nomenklatura():
 
         log.update({'nomenklatura_response': results})
         log.update({'matches': matches})
-        g.db.save_doc(log)
 
         if len(matches) < 1:
             # attempt to match each token of query
