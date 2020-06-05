@@ -1,3 +1,10 @@
+Release 1.2
+----------------------
+* update to python3
+* removed couchdb
+* removed celery
+
+
 Release 1.1
 ----------------------
 * removed fusiontable
